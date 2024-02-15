@@ -1,0 +1,45 @@
+.fnaf-vid iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+}
+
+.home-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content iframe{
+    height: 80vh;
+    width: 80vh;
+}
