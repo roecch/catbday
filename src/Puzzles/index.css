@@ -5,6 +5,10 @@
     transform: translate(-50%, -50%);
 }
 
+#nonogram{
+  transform: scale(0.8);
+}
+
 .home-icon {
     position: absolute;
     width: 50px;
