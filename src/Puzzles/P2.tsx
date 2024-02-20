@@ -9,7 +9,7 @@ function P2() {
     return(
         <div>
         <div className="puzz">
-            <img src="/images/Screenshot 2024-02-14 225743.png"></img>
+            <img src="images/Screenshot 2024-02-14 225743.png"></img>
         </div>
             <FaHome className="home-icon" size={20} onClick={navigateToHome}></FaHome>
         </div>

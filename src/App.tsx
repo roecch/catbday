@@ -10,6 +10,7 @@ import Foxy from "./Fnaf/Pages/foxy";
 import Chopper from "./OnePiece/Chopper";
 import P2 from "./Puzzles/P2";
 import P1 from "./Puzzles/P1";
+import "./index.css"
 
 function App() {
   return (

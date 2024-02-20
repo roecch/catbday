@@ -17,15 +17,27 @@ function Home() {
         // 👇️ navigate to /contacts
         navigate('/P2');
       };
+
+
+    useEffect(() => {
+        // Check if the button has been clicked before in local storage
+        const giftClickedBefore = localStorage.getItem('giftClicked');
+    
+        if (giftClickedBefore) {
+            setGiftClicked(true);
+        }
+      }, []);
     
     const [giftClicked, setGiftClicked] = useState(false);
     const [open, setOpen] = useState(false);
 
     return(
     <div className="home">
-        <div className="glowing-gift" onClick={() => {setOpen(!open); setGiftClicked(true)}}>
-            <img src="/images/kado.png" alt="gift" id="gift-back"/>
-            <img src="/images/kado.png" alt="gift" id="gift"/>
+        <div className="glowing-gift" onClick={() => {setOpen(!open); 
+                                                      setGiftClicked(true); 
+                                                      localStorage.setItem('giftClicked', 'true');}}>
+            <img src="images/kado.png" alt="gift" id="gift-back"/>
+            <img src="images/kado.png" alt="gift" id="gift"/>
         </div>
             Happy Birthday!
             <img src="images/emawh.gif" alt="mwah" id="mwah"/>

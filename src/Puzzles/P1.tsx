@@ -9,7 +9,9 @@ function P1() {
     return(
         <div>
         <div className="puzz">
-            <img src="/images/Screenshot 2024-02-14 231711.png"></img><br/>
+            <img src="images/Screenshot 2024-02-14 231711.png"></img><br/>
+            ...- .. --. . -. . .-. . <br/>
+            -- ..- ... .. -.-. / ... .... . . - <br/>
             hint : use <a href="https://www.dcode.fr/en">www.dcode.fr</a><br/>
             key for 2nd part: birth<br/>
         </div>
