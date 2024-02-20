@@ -21,7 +21,7 @@ function Home() {
 
     useEffect(() => {
         // Check if the button has been clicked before in local storage
-        const giftClickedBefore = localStorage.getItem('giftClicked');
+        const giftClickedBefore = sessionStorage.getItem('giftClicked');
     
         if (giftClickedBefore) {
             setGiftClicked(true);
@@ -35,7 +35,7 @@ function Home() {
     <div className="home">
         <div className="glowing-gift" onClick={() => {setOpen(!open); 
                                                       setGiftClicked(true); 
-                                                      localStorage.setItem('giftClicked', 'true');}}>
+                                                      sessionStorage.setItem('giftClicked', 'true');}}>
             <img src="images/kado.png" alt="gift" id="gift-back"/>
             <img src="images/kado.png" alt="gift" id="gift"/>
         </div>
